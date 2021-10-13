@@ -1,0 +1,38 @@
+// Iterasi data dari array dengan menggunakan forEach
+<!DOCTYPE html>
+<html>
+<body>
+<div id="divid"></div>
+<script>
+var mobil = ["Avanza", "Agya", "Ayla"];
+var teks, i;
+teks ="<ul>";
+mobil.forEach(fungsiMobil)
+teks += "</ul>";
+function fungsiMobil(value)
+{
+    teks += "<li>"+value+"</li>";
+}
+document.getElementById("divid").innerHTML = teks;
+</script>
+</body>
+</html>
+
+// Iterasi data dari array dengan menggunakan metode .map
+<!DOCTYPE html>
+<html>
+<body>
+<div id="divid"></div>
+<script>
+var nomor1 = [4, 9, 16, 25];
+var nomor2 = nomor1.map(kaliDua);
+
+function kaliDua(value,index,array) 
+{
+    return value * 2;
+
+}
+console.log(nomor2);
+</script>
+</body>
+</html>
